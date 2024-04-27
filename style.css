@@ -73,6 +73,7 @@ a:hover {
     text-align: center;
     display: flex;
     margin: 0;
+    list-style: none;
 }
 
 .logo:hover {
