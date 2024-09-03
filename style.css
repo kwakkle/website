@@ -473,7 +473,7 @@ footer p {
 }
 
 .header-down-arrow {
-    animation-name: pulse 2s 3s ease-out infinite;
+    animation-duration: 2s 3s ease-out infinite;
     position: absolute;
         bottom: 6vh;
         left: 0;
@@ -485,7 +485,7 @@ footer p {
     cursor: pointer;
 }
 
-.header-down-arrow-img {
+.header-down-arrow img {
     animation-name: fade-slide-up 1s 1s ease-out forwards;
     opacity: 0;
 }
