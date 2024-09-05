@@ -87,12 +87,15 @@
         height: 46vw;
         justify-content: center;
     }
-    .section__text__p2 {
+    .section__text__p1 {
         font-size: 1.25rem; 
+        
     }
+    
     .title {
         font-size: 2rem;
     }
+    
     .text-container {
         text-align: justify;
     }
