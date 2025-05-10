@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rvk Cardona</title>
@@ -30,40 +30,42 @@
               <span></span>
             </div>
             <div class="menu-links">
-              <li><a href="about.html"onclick="toggleMenu()">about</a></li>
-              <li><a href="experience.html"onclick="toggleMenu()">experience</a></li>
-              <li><a href="research.html"onclick="toggleMenu()">research</a></li>
-              <li><a href="#contact"onclick="toggleMenu()">contacts</a></li>
-            </div>
-        </div>
+                <ul>
+                <li><a href="about.html" onclick="toggleMenu()">about</a></li>
+                <li><a href="experience.html" onclick="toggleMenu()">experience</a></li>
+                <li><a href="research.html" onclick="toggleMenu()">research</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">contacts</a></li>
+            </ul>
+</div>
     </nav>
     <section id="profile">
         <div class="section__text">
-            <p class="title">Hello, I’m Rvk. <span style="color:rgba(125,159,122,1);">I’m a Graduate Student</span> at UC Riverside. </p>
-            <p class="section__text__p1">Currently, I am working as a <span style="color:rgba(125,159,122,1);">Clinic Technician</span> at <span style="color:rgba(125,159,122,1);">Fastest Labs</span>, a comprehensive drug, alcohol, and DNA testing service. I am planning on pursuing my Master of Science in <span style="color:rgba(125,159,122,1);">Biomedical Sciences</span> at <span style="color:rgba(125,159,122,1);">UC Riverside.</span> I am eager to pursue a Master's degree to further advance my skills in <span style="color:rgba(125,159,122,1);">neuroimaging research,</span> to allow me to research on my interests of the impacts of <span style="color:rgba(125,159,122,1);">diseases</span> and <span style="color:rgba(125,159,122,1);">disorders</span> on the brain.</p>
+            <h1 class="title">
+                Hello, I’m Rvk. <br />
+            <span style="color:#7D9F7B;">Graduate Student at UC Riverside.</span>
+            </h1>
+            <p class="section__text__p1">
+            I am in the <strong>M.S. in Biomedical Sciences</strong> program at <span style="color:#7D9F7B;"><strong>UC Riverside</strong></span>, graduating this summer. <br><br>
+
+            I specialize in <strong>data analysis</strong> and <strong>computational neuroscience</strong>, developing <strong>MATLAB</strong> workflows for processing neural data, implementing <strong>sensory filtering</strong> analyses, and generating visualizations for research publications. <br><br>
+
+            I am passionate about using <strong>quantitative</strong> and <strong>computational tools</strong> to drive insights in biomedical research and am actively seeking opportunities as a <span style="color:#7D9F7B;"><strong>clinical data analyst</strong></span>.
+            </p>
             <div class="btn-container">
-                <button class="btn btn-color-2" 
-                onclick="window.open('./assets/resume.pdf')">Download CV
-                </button>
-                <button class="btn btn-color-1" 
-                onclick="location.href='./#contact'">Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" 
-                alt="My LinkedIn profile"
-                class="icon" 
-                onclick="location.href='https://www.linkedin.com/in/rvkcardona/'"
-                />
-                <img src="./assets/githubimg.png" 
-                alt="My Github profile"
-                class="icon" 
-                onclick="location.href='https://github.com/kwakkle'"
-                />
-            </div>
+            <button class="btn btn-primary" onclick="location.href='./#contact'">Contact me</button>
+            <button class="btn btn-secondary" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+            <button class="btn btn-icon" onclick="location.href='https://www.linkedin.com/in/rvkcardona/'">
+                <img src="./assets/linkedin.png" alt="LinkedIn" />
+            </button>
+            <button class="btn btn-icon" onclick="location.href='https://github.com/kwakkle'">
+                <img src="./assets/githubimg.png" alt="GitHub" />
+            </button>
         </div>
         </div>
     </section>
+    <div class="logo-center">
+        <img src="./assets/pochacco.png" alt="logo" />
+    </div>
     <footer>
         <p>Copyright &#169; 2024 Rvk Cardona. All Rights Reserved.</p>
     </footer>
