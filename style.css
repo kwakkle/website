@@ -215,8 +215,8 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  margin: 0 10rem;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   height: auto;
 }
@@ -361,80 +361,91 @@ section {
 
 /* ABOUT SECTION */
 
-.about.html {
-    position: relative;
+.about-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  color: #7D9F7B;
+  text-align: center;
+  margin: 40px 0 40px;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 0rem;
+.about-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
-.about-details-container {
-    justify-content: center;
-    flex-direction: column;
-}
-.about_me_title {
-    font-size: 32px;
-    color:grey;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-    display: flex;
+.about-pic-container {
+  flex: 0 0 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .about-pic {
-    border-radius: 2rem;
-    height: 350px;
-    width: 350px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: -1rem;
+.about-text {
+  flex: 1;
+  max-width: 620px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: black;
 }
 
-.details-container {
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    text-align: center;
+.skills-heading {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.section-container {
-    gap: 4rem;
-    height: 80%;
+.skills-list {
+  font-weight: 500;
+  font-size: 24px;
+  padding-left: 1.2rem;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.section__pic-container {
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+.skills-list li {
+  margin-bottom: 12px;
 }
 
-.text-container p {
-    color:black;
-    font-weight: 400;
-    justify-content: center;
-    flex-direction: column;
+.about-bottom-blurb {
+  max-width: 800px;
+  margin: 40px auto 0;
+  padding: 0 40px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 525;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333;
 }
 
-.section__text__about {
-    text-align: center;
-    font-size: 48px;
 
+
+.highlight-game {
+  color: #7D9F7B;
+  font-weight: 600;
 }
+
+
+
+
 /* EXPERIENCE SECTION */
 
 #experience {
