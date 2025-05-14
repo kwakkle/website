@@ -399,7 +399,7 @@ section {
   max-width: 620px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 28px;
   color: black;
 }
@@ -414,7 +414,7 @@ section {
 
 .skills-list {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   padding-left: 1.2rem;
   color: #333;
   font-family: 'Montserrat', sans-serif;
@@ -426,25 +426,24 @@ section {
 
 .about-bottom-blurb {
   max-width: 800px;
-  margin: 40px auto 0;
+  margin: 20px auto 0;
   padding: 0 40px;
-  text-align: left;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-weight: 525;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 28px;
   color: #333;
+  margin-bottom: 20px
 }
-
-
 
 .highlight-game {
   color: #7D9F7B;
   font-weight: 600;
+
 }
 
-
-
+/* /////////////////// */
 
 /* EXPERIENCE SECTION */
 
