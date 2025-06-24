@@ -1,6 +1,6 @@
 /* GENERAL */
 html, body {
-  height: 100%;
+  min-height:100vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -32,9 +32,6 @@ html {
     scroll-behavior: smooth;
 }
 
-p{
-    color: #676767
-}
 
 /* TRANSITION */
 
@@ -369,6 +366,10 @@ section {
   text-align: center;
   margin: 40px 0 40px;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  animation-delay: 0.1s;
+
 }
 
 .about-main-container {
@@ -386,6 +387,9 @@ section {
   flex: 0 0 200px;
   display: flex;
   justify-content: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  animation-delay: 0.3s;
 }
 
 .about-pic {
@@ -402,6 +406,9 @@ section {
   font-size: 20px;
   line-height: 28px;
   color: black;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  animation-delay: 0.5s;
 }
 
 .skills-heading {
@@ -434,7 +441,10 @@ section {
   font-size: 20px;
   line-height: 28px;
   color: #333;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  animation-delay: 0.7s;
 }
 
 .highlight-game {
@@ -451,38 +461,51 @@ section {
     position: relative;
 }
 
-.experience-sub-title {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    gap: 2.5rem;
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 40px auto 80px;
+  padding: 0 40px;
+  align-items: start;
 }
 
-.experience-details-container {
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
-    flex-direction: row;
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  animation: fadeIn 1s ease-in forwards;
+
 }
 
-.article-container {
-    display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
+.experience-img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
-article {
-    display: flex;
-    width: 10rem;
-    justify-content: space-aorund;
-    gap: 0.5rem;
+.experience-role {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 10px;
 }
 
-article.icon {
-    cursor: default;
+.experience-divider {
+  width: 100px;
+  border-top: 3px solid #7D9F7B;
+  margin: 10px 0 20px;
+}
+
+.experience-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: black;
 }
 
 /* RESEARCH SECTION */
@@ -491,26 +514,78 @@ article.icon {
     position: relative
 }
 
-.color-container {
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+.research-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px 20px;
+  text-align: left;
+  animation: fadeIn 1s ease-in forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
 }
 
-.project-img {
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+.research-project-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: black;
 }
 
-.research-title {
-    margin: 1rem;
-    color: black;
+.research-authors {
+  font-family: 'Montserrat', sans-serif;
+  color: #585656;
+  font-size: 18px;
+  margin-bottom: 16px;
 }
 
-.research-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
+.research-divider {
+  width: 120px;
+  border-top: 3px solid #7D9F7B;
+  margin: 0 auto 24px;
 }
+
+.research-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.research-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: left;
+  margin-bottom: 40px;
+}
+
+.research-buttons .btn {
+  border-radius: 999px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: none;
+}
+
+
+.research-images-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  justify-items: center;
+  max-width: 1400px; 
+  margin: -20px auto 60px;   
+}
+
+.research-img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 
 
 /* FOOTER SECTION */

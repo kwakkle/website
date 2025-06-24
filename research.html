@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rvk Cardona</title>
@@ -10,15 +10,14 @@
 </head>
 <body>
     <nav id="desktop-nav">       
-        <div class="logo-img">
-            <img src="./assets/pochacco.png">
-        </div>
+        <a href="index.html" class="logo-img">
+            <img src="./assets/pochacco.png" alt="Home" />
+        </a>
         <div>
             <ul class="nav-links">
                 <li><a href="about.html">about</a></li>
                 <li><a href="experience.html">experience</a></li>
                 <li><a href="research.html">research</a></li>
-                <li><a href="#contact">contacts</a></li>
             </ul>
         </div>
     </nav> 
@@ -30,101 +29,45 @@
               <span></span>
             </div>
             <div class="menu-links">
-              <li><a href="about.html"onclick="toggleMenu()">about</a></li>
-              <li><a href="experience.html"onclick="toggleMenu()">experience</a></li>
-              <li><a href="research.html"onclick="toggleMenu()">research</a></li>
-              <li><a href="#contact"onclick="toggleMenu()">contacts</a></li>
-            </div>
+                <ul>
+                <li><a href="about.html" onclick="toggleMenu()">about</a></li>
+                <li><a href="experience.html" onclick="toggleMenu()">experience</a></li>
+                <li><a href="research.html" onclick="toggleMenu()">research</a></li>
+            </ul>
         </div>
-    </nav>
-    <section id="research">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Research</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                    src="./assets/project-1.png"
-                    alt="Research 1"
-                    class="project-img">
-                </div> 
-                <h2 class="experience-sub-title research-title">Research One</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 research-btn" 
-                    onclick="location.href='https://github.com/'">
-                        Github
-                    </button>
-                    <button class="btn btn-color-2 research-btn" 
-                    onclick="location.href='https://github.com/'">
-                        Live Demo
-                    </button>
-                </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                        src="./assets/project-2.png"
-                        alt="Project 2"
-                        class="project-img">
-                    </div> 
-                    <h2 class="experience-sub-title research-title">Research Two</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 research-btn" 
-                        onclick="location.href='https://github.com/'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 research-btn" 
-                        onclick="location.href='https://github.com/'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                        src="./assets/project-3.png"
-                        alt="research 3"
-                        class="project-img">
-                    </div> 
-                    <h2 class="experience-sub-title research-title">Research Three</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 research-btn" 
-                        onclick="location.href='https://github.com/'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 research-btn" 
-                        onclick="location.href='https://github.com/'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-          </div> 
+    </nav>    
+    
+<section id="research">
+  <h1 class="about-title">research</h1>
+
+  <div class="research-content">
+    <h2 class="research-project-title">Sequence Learning and Cortical Modulation in a Mouse Model of Fragile X Syndrome</h2>
+    <p class="research-authors">Sanya Puri, Rvk Cardona, Kat Park, Dominic Garcia, and Edward Zagha</p>
+    <hr class="research-divider" />
+
+    <p class="research-description">
+      This project explores how the brain learns and responds to repeated sensory patterns, a process disrupted in Fragile X Syndrome (FXS). 
+      Using a whisker-based task and widefield calcium imaging, we compare behavioral and neural activity in wild-type and FMR1 knockout mice 
+      to uncover how sensory and frontal cortex dynamics contribute to sequence learning deficits in FXS.
+    </p>
+
+        <div class="research-buttons">
+            <a href="https://raw.githubusercontent.com/kwakkle/MCSB-Poster/refs/heads/main/poster/Cardona_FXS_SequenceLearning_Poster.png" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Poster</a>
+            <a href="https://github.com/kwakkle/MCSB-Poster" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Code</a>
         </div>
-    </section>
+        <div class="research-images-grid">
+            <img src="./assets/mouse_research_image.png" alt="Mouse Research Diagram" class="research-img" />
+            <img src="./assets/fmr1_model.png" alt="FMR1 Model Diagram" class="research-img" />
+        </div>
+
+  </div>
+
+  <!-- Your diagram/images can stay below here -->
+</section>
+
+
     <footer>
         <p>Copyright &#169; 2024 Rvk Cardona. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
-    <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img 
-                src="./assets/experience.png" 
-                alt="experience icon"
-                class="icon"
-            />
-            <h3>Experience</h3>
-            <p>Clinic Technician <br />@ FastestLabs</p>
-        </div>
-        <div class="details-container">
-            <img
-            src="./assets/education.png"
-            alt="Education icon"
-            class="icon"
-            />
-            <h3>Education</h3>
-            <p>B.S. Neuroscience <br />Minor in Psychology</p>
-        </div>
 </body>
 </html>

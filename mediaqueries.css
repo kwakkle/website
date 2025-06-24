@@ -7,6 +7,31 @@
         flex-wrap: wrap;
     }
 }
+@media screen and (max-width: 768px) {
+  .research-images-grid {
+    grid-template-columns: 1fr;
+  }
+  
+    .experience-grid {
+    grid-template-columns: 1fr; /* stack into one column */
+    gap: 3rem;
+    padding: 0 24px;
+  }
+
+  .experience-img {
+    margin-bottom: 16px;
+  }
+
+  .experience-role {
+    font-size: 18px;
+  }
+
+  .experience-description {
+    font-size: 15px;
+  }
+
+
+  }
 
 
 

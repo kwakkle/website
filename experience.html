@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rvk Cardona</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <title>About Rvk Cardona</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <nav id="desktop-nav">       
-        <div class="logo-img">
-            <img src="./assets/pochacco.png">
-        </div>
+     <nav id="desktop-nav">       
+        <a href="index.html" class="logo-img">
+            <img src="./assets/pochacco.png" alt="Home" />
+        </a>
         <div>
             <ul class="nav-links">
                 <li><a href="about.html">about</a></li>
                 <li><a href="experience.html">experience</a></li>
                 <li><a href="research.html">research</a></li>
-                <li><a href="#contact">contacts</a></li>
             </ul>
         </div>
     </nav> 
@@ -30,119 +30,45 @@
               <span></span>
             </div>
             <div class="menu-links">
-              <li><a href="about.html"onclick="toggleMenu()">about</a></li>
-              <li><a href="experience.html"onclick="toggleMenu()">experience</a></li>
-              <li><a href="research.html"onclick="toggleMenu()">research</a></li>
-              <li><a href="#contact"onclick="toggleMenu()">contacts</a></li>
-            </div>
-        </div>
-    </nav>
+                <ul>
+                <li><a href="about.html" onclick="toggleMenu()">about</a></li>
+                <li><a href="experience.html" onclick="toggleMenu()">experience</a></li>
+                <li><a href="research.html" onclick="toggleMenu()">research</a></li>
+            </ul>
+</div>
+    </nav>    
+    
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-                <h2 class="experience-sub-title">Clinic Technician</h2>
-                <div class="article-container">
-                    <article>
-                        <img 
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                        />
-                        <div>
-                            <h3>Specimen Collection</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                        />
-                        <div>
-                            <h3>CSS</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                        />
-                        <div>
-                            <h3>JavaScript</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                        />
-                        <div>
-                            <h3>Python</h3>
-                            <p>Basic</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="details-container">
-                <h2 class="experience-sub-title">Skills</h2>
-                <div class="article-container">
-                    <article>
-                        <img 
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                        />
-                        <div>
-                            <h3>DaVinci Resolve</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img 
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                        />
-                        <div>
-                            <h3>Canva</h3>
-                            <p>Experienced</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img 
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                        />
-                        <div>
-                            <h3>Express JS</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img 
-                        src="./assets/checkmark.png"
-                        alt="Experience icon"
-                        class="icon"
-                        />
-                        <div>
-                            <h3>Git</h3>
-                            <p>Intermediate</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-          </div>
-        </div>
-    </section>
+        <h1 class="about-title">experience</h1>
+  <div class="experience-grid">
+    
+    <!-- ZAGHA LAB -->
+    <div class="experience-card">
+      <img src="./assets/zagha_experience.png" alt="Zagha Lab" class="experience-img" />
+      <h2 class="experience-role">Zagha Lab<br />Graduate Researcher<br />Sep 2024 - June 2025</h2>
+      <hr class="experience-divider" />
+      <p class="experience-description">
+        Conducted computational neuroscience research on how the brain learns and predicts sensory sequences,
+        a process disrupted in Fragile X Syndrome (FXS), using calcium imaging to compare cortical activity
+        in wild-type and FMR1 knockout mice.
+      </p>
+    </div>
+
+    <!-- FASTEST LABS -->
+    <div class="experience-card">
+      <img src="./assets/fastest_labs.png" alt="Fastest Labs Clinic" class="experience-img" />
+      <h2 class="experience-role">Fastest Labs<br />Clinic Technician<br />Nov 2023 - Sep 2024</h2>
+      <hr class="experience-divider" />
+      <p class="experience-description">
+        Manage and oversee daily operations of the clinic facility, including client interactions and specimen collections,
+        and ensuring compliance with health and safety regulations. Conducted certified specimen collections (urine, alcohol, saliva, etc.)
+        and maintained accurate documentation as per regulatory requirements.
+      </p>
+    </div>
+  </div>
+</section>
     <footer>
         <p>Copyright &#169; 2024 Rvk Cardona. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
