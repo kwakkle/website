@@ -116,11 +116,13 @@ a:hover {
 }
 
 #hamburger-nav {
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #7D9F7B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  background-color: #7D9F7B;
+  position: relative;
+  z-index: 1000;
 }
 
 .hamburger-menu {
@@ -151,18 +153,25 @@ a:hover {
 .menu-links {
   position: absolute;
   top: 100%;
-  left: 50%;
-  transform: translateX(100%);
+  right: 0;
   background-color: #7D9F7B;
   border-radius: 12px;
   width: 250px;
   max-height: 0;
-  overflow: hidden;
   opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
   transition: max-height 0.3s ease, opacity 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+.menu-links.open {
+  max-height: 500px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
 
 .menu-links.open {
   max-height: 500px;
