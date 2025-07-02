@@ -116,7 +116,7 @@ a:hover {
 }
 
 #hamburger-nav {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   padding: 20px 24px;
